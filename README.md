@@ -9,4 +9,18 @@ Instead of Wrting whole ML workflow in single file (emotion_detection.ipynb), we
 4. dvc init (dvc start tracking your folder)
 5. dvc repro (for run pipeline)
 6. dvc dag (for getting pipeline graph)
-7. dvc metrics show
+7. dvc metrics show (dvc must track metrics.json then only we can use this command)
+
+# git push
+
+1. git status
+2. git add .
+3. git commit -m "<commit_message>"
+4. create one public git repo (vc-emotion-detection)
+4. git remote add origin "<https_link_of_repo>"
+5. git branch
+6. git push -u origin main
+
+# Installl Dependency
+
+1. python -m pip freeze > requirements.txt
