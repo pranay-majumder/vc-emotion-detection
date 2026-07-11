@@ -24,3 +24,27 @@ Instead of Wrting whole ML workflow in single file (emotion_detection.ipynb), we
 # Installl Dependency
 
 1. python -m pip freeze > requirements.txt
+
+# git tag V2.0
+
+git add .
+git commit -m "Add TF-IDF model"
+
+git tag -a V2.0 -m "Release V2 with TF-IDF"  ## create tag localy
+
+git push origin main
+git push origin V2.0                         ## push tag into github
+
+# git tag V3.0
+
+git add .
+git commit -m "Add TF-IDF model"
+
+git tag -a V3.0 -m "Release V3 with BOW"   ## create tag localy
+
+git push origin main
+git push origin v3.0                       ## push tag into github
+
+# show all commit, tag, brach in form of graph
+
+git log --oneline --graph --all
